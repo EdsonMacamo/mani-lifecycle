@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecycle-child.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecy
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    MatListModule
+    MatListModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,11 +10,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list';
+import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecycle-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainLifecycleComponent
+    MainLifecycleComponent,
+    LifecycleChildComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     MatIconModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

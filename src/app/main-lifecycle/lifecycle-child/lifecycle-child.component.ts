@@ -41,8 +41,12 @@ export class LifecycleChildComponent implements OnInit, OnDestroy, OnChanges {
     this.newEvent("ngAfterViewInit");
    }
    ngOnChanges(changes:SimpleChanges){
+     console.log(changes);
     console.log(this.name + " - OnChanges")
     this.newEvent("ngOnChanges");
+    if(changes['name']){
+      console.log("new name :" + changes['name'].currentValue);
+    }
    }
    newEvent(name:string){
    let id = this.netxEventId++;
